@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Database, Layers, Zap, Target, Building, Users, Download } from 'lucide-react';
+import { ArrowRight, Code, Database, Layers, Zap, Target, Building, Users, Download, FileText, Cpu, Monitor, ArrowDown } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -168,6 +168,136 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-3">Entrenamiento continuo y mejora real</h3>
                   <p className="text-gray-300">Implementamos ciclos de aprendizaje que permiten que tu sistema mejore constantemente con cada interacción y nuevo dato.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Technical Architecture */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-white text-center mb-16">Cómo construimos ecosistemas inteligentes</h2>
+            
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Layered Architecture Visualization */}
+              <div className="relative">
+                <div className="space-y-6">
+                  {/* Layer 3 - Application */}
+                  <div className="bg-gradient-to-r from-[#2C4EFF]/20 to-[#00F5C3]/20 p-8 rounded-xl border border-[#2C4EFF]/30 backdrop-blur-sm transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#2C4EFF]/10">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#2C4EFF] to-[#00F5C3] rounded-lg flex items-center justify-center shadow-lg shadow-[#2C4EFF]/30">
+                        <Monitor className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-white">Aplicación Inteligente</h3>
+                    </div>
+                    <p className="text-gray-300 text-sm">Interfaces que toman decisiones automatizadas basadas en tu contexto específico</p>
+                  </div>
+
+                  {/* Layer 2 - AI Models */}
+                  <div className="bg-gradient-to-r from-[#00F5C3]/20 to-[#FF9E44]/20 p-8 rounded-xl border border-[#00F5C3]/30 backdrop-blur-sm transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#00F5C3]/10 ml-8">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#00F5C3] to-[#FF9E44] rounded-lg flex items-center justify-center shadow-lg shadow-[#00F5C3]/30">
+                        <Cpu className="h-6 w-6 text-black" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-white">Modelos de IA Entrenados</h3>
+                    </div>
+                    <p className="text-gray-300 text-sm">Algoritmos especializados que aprenden el lenguaje de tu industria</p>
+                  </div>
+
+                  {/* Layer 1 - Custom Software */}
+                  <div className="bg-gradient-to-r from-[#FF9E44]/20 to-[#2C4EFF]/20 p-8 rounded-xl border border-[#FF9E44]/30 backdrop-blur-sm transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#FF9E44]/10 ml-16">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#FF9E44] to-[#2C4EFF] rounded-lg flex items-center justify-center shadow-lg shadow-[#FF9E44]/30">
+                        <Code className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-white">Software a Medida</h3>
+                    </div>
+                    <p className="text-gray-300 text-sm">Arquitectura robusta que conecta con tus sistemas existentes</p>
+                  </div>
+
+                  {/* Layer 0 - Business Data */}
+                  <div className="bg-gradient-to-r from-[#1E293B] to-[#334155] p-8 rounded-xl border border-[#334155]/50 backdrop-blur-sm transform hover:scale-105 transition-all duration-300 shadow-lg shadow-black/20 ml-24">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#334155] to-[#1E293B] rounded-lg flex items-center justify-center border border-[#00F5C3]/30 shadow-lg shadow-[#00F5C3]/10">
+                        <FileText className="h-6 w-6 text-[#00F5C3]" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-white">Datos del Negocio</h3>
+                    </div>
+                    <p className="text-gray-300 text-sm">Tu información propietaria, procesos únicos y conocimiento especializado</p>
+                  </div>
+                </div>
+
+                {/* Connection Lines */}
+                <div className="absolute top-20 left-1/2 transform -translate-x-1/2 h-full w-px">
+                  <div className="h-full bg-gradient-to-b from-[#2C4EFF] via-[#00F5C3] via-[#FF9E44] to-[#334155] opacity-30"></div>
+                </div>
+              </div>
+
+              {/* Process Flow */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h3 className="text-2xl font-semibold text-white mb-6">Flujo de construcción</h3>
+                </div>
+
+                <div className="space-y-6">
+                  {/* Step 1 */}
+                  <div className="flex items-center space-x-4 p-6 bg-gradient-to-r from-[#1E293B]/30 to-[#334155]/20 rounded-xl border border-[#334155]/30 hover:border-[#00F5C3]/30 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#334155] to-[#1E293B] rounded-full flex items-center justify-center border border-[#00F5C3]/30 flex-shrink-0 shadow-lg shadow-[#00F5C3]/10">
+                      <Database className="h-6 w-6 text-[#00F5C3]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Datos del negocio</h4>
+                      <p className="text-sm text-gray-400">Analizamos y estructuramos tu información</p>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center">
+                    <ArrowDown className="h-6 w-6 text-[#00F5C3]" />
+                  </div>
+
+                  {/* Step 2 */}
+                  <div className="flex items-center space-x-4 p-6 bg-gradient-to-r from-[#1E293B]/30 to-[#334155]/20 rounded-xl border border-[#334155]/30 hover:border-[#FF9E44]/30 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#FF9E44] to-[#2C4EFF] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#FF9E44]/20">
+                      <Code className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Software a medida</h4>
+                      <p className="text-sm text-gray-400">Creamos la infraestructura personalizada</p>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center">
+                    <ArrowDown className="h-6 w-6 text-[#00F5C3]" />
+                  </div>
+
+                  {/* Step 3 */}
+                  <div className="flex items-center space-x-4 p-6 bg-gradient-to-r from-[#1E293B]/30 to-[#334155]/20 rounded-xl border border-[#334155]/30 hover:border-[#00F5C3]/30 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#00F5C3] to-[#FF9E44] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#00F5C3]/20">
+                      <Zap className="h-6 w-6 text-black" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Modelos de IA entrenados</h4>
+                      <p className="text-sm text-gray-400">Integramos IA específica para tu contexto</p>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center">
+                    <ArrowDown className="h-6 w-6 text-[#00F5C3]" />
+                  </div>
+
+                  {/* Step 4 */}
+                  <div className="flex items-center space-x-4 p-6 bg-gradient-to-r from-[#2C4EFF]/20 to-[#00F5C3]/20 rounded-xl border border-[#2C4EFF]/30 hover:border-[#2C4EFF]/50 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#2C4EFF] to-[#00F5C3] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2C4EFF]/30">
+                      <Target className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Decisiones inteligentes</h4>
+                      <p className="text-sm text-gray-400">Sistema que evoluciona y mejora continuamente</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
