@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Database, Layers, Zap, Target, Building, Users, Download, FileText, Cpu, Monitor, ArrowDown } from 'lucide-react';
@@ -9,8 +8,12 @@ const Index = () => {
       {/* Header/Navigation */}
       <header className="container mx-auto px-6 py-8">
         <nav className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-[#F5F2E9]">
-            Better Code
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/9567e71e-b0b0-4354-9e1e-811322c8c6ae.png" 
+              alt="Better Code Logo" 
+              className="h-8 w-auto"
+            />
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#servicios" className="text-gray-300 hover:text-[#FF4ECD] transition-colors">Servicios</a>
